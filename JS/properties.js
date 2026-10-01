@@ -319,7 +319,7 @@ function displayProperties(properties) {
                         </span>
                     </div>
 
-                    <a href="property-details.html?id=${property.id}" class="view-details-btn">
+                    <a href="./HTMLPAGES/property-details.html?id=${property.id}" class="view-details-btn">
                         View Details
                     </a>
 
