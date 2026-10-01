@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../IMAGES/logo.jpg">
+    <title>Add Property | StayFind</title>
+    <link rel="stylesheet" href="../CSSPAGES/property-form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-house"></i>
+            StayFind
+        </a>
+
+        <a href="dashboard.html" class="back-dashboard">
+            <i class="fa-solid fa-arrow-left"></i>
+            Dashboard
+        </a>
+    </nav>
+
+    <main>
+
+        <div class="form-heading">
+            <h1 id="formTitle">Add New Property</h1>
+            <p id="formSubtitle">Enter the details of your student accommodation.</p>
+        </div>
+
+        <form class="property-form" id="propertyForm">
+
+            <div class="form-group">
+                <label>Property Title</label>
+                <input type="text" id="propertyTitle" placeholder="e.g. Cozy Student Apartment" required>
+            </div>
+
+            <div class="form-group">
+                <label>Location</label>
+                <input type="text" id="propertyLocation" placeholder="e.g. Yaba, Lagos" required>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Price per Year (₦)</label>
+                    <input type="number" id="propertyPrice" placeholder="e.g. 450000" required>
+                </div>
+
+                <div class="form-group">
+                   <label>Number of Rooms</label>
+                   <select id="propertyBedrooms" required>
+                     <option value="" disabled selected>Select number</option>
+                     <option value="1">1 Room</option>
+                     <option value="2">2 Rooms</option>
+                     <option value="3">3 Rooms</option>
+                     <option value="4">4 Rooms</option>
+                     <option value="5">5+ Rooms</option>
+                  </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea id="propertyDescription" placeholder="Tell us more about the property..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                <i class="fa-solid fa-plus"></i>
+                Add Property
+            </button>
+        </form>
+
+    </main>
+
+    <script src="../JS/properties.js" type="module"></script>
+</body>
+</html>

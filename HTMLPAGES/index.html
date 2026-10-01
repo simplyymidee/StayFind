@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../IMAGES/logo.jpg">
+    <title>StayFind | Student Accommodation</title>
+
+    <link rel="stylesheet" href="../CSSPAGES/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-house"></i>
+            <h2>StayFind</h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Browse</a>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="login.html">Login</a>
+            <a href="register.html" class="signup-btn">Sign Up</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Find Your Perfect<br>
+                Student Home
+            </h1>
+
+            <p>
+                Safe, Affordable, Close to campus.
+            </p>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="../IMAGES/hero.jpg" alt="Student accommodation">
+        </div>
+
+    </section>
+
+    <!-- SEARCH SECTION -->
+<section class="search-section">
+
+    <div class="search-box">
+
+        <div class="search-input">
+            <label>Location</label>
+            <input type="text" id="searchLocation" placeholder="Where do you want to stay?">
+        </div>
+
+        <div class="search-input">
+            <label>Max Price</label>
+            <input type="number" id="searchPrice" placeholder="Enter max price">
+        </div>
+
+        <div class="search-input">
+            <label>Bedrooms</label>
+
+            <select id="searchBedrooms">
+                <option value="">Any</option>
+                <option value="1">1 Bedroom</option>
+                <option value="2">2 Bedrooms</option>
+                <option value="3">3 Bedrooms</option>
+                <option value="4">4+ Bedrooms</option>
+            </select>
+        </div>
+
+        <button class="search-btn" id="searchBtn">Search</button>
+
+    </div>
+
+</section>
+
+    <!-- AVAILABLE PROPERTIES -->
+    <section class="properties" id="properties">
+
+         <div class="properties-heading">
+        <div>
+            <h2>Available Properties</h2>
+            <p>Explore comfortable and affordable student homes.</p>
+        </div>
+
+        <a href="#">View All</a>
+    </div>
+
+
+    <div class="property-container" id="allProperties">
+
+        <!-- PROPERTY 1 -->
+        <!-- <div class="property-card">
+
+            <img src="../IMAGES/property1.jpg" alt="Student accommodation">
+
+            <div class="property-info">
+
+                <h3>Cozy Student Apartment</h3>
+
+                <p class="location">📍 Yaba, Lagos</p>
+
+                <div class="property-details">
+                    <span>🛏 2 Bedrooms</span>
+                    <span>₦450,000 / year</span>
+                </div>
+
+                <a href="property-details.html" class="view-btn">
+                    View Details
+                </a>
+
+            </div>
+
+        </div> -->
+
+
+        <!-- PROPERTY 2 -->
+        <!-- <div class="property-card">
+
+            <img src="../IMAGES/property2.jpg" alt="Student accommodation">
+
+            <div class="property-info">
+
+                <h3>Campus View Lodge</h3>
+
+                <p class="location">📍 Akoka, Lagos</p>
+
+                <div class="property-details">
+                    <span>🛏 1 Bedroom</span>
+                    <span>₦300,000 / year</span>
+                </div>
+
+                <a href="property-details.html" class="view-btn">
+                    View Details
+                </a>
+
+            </div>
+
+        </div> -->
+
+
+        <!-- PROPERTY 3 -->
+        <!-- <div class="property-card">
+
+            <img src="../IMAGES/property3.jpg" alt="Student accommodation">
+
+            <div class="property-info">
+
+                <h3>Maple Residence</h3>
+
+                <p class="location">📍 Surulere, Lagos</p>
+
+                <div class="property-details">
+                    <span>🛏 3 Bedrooms</span>
+                    <span>₦650,000 / year</span>
+                </div>
+
+                <a href="property-details.html" class="view-btn">
+                    View Details
+                </a>
+
+            </div>
+
+        </div> -->
+
+    </div>
+
+    </section>
+
+    <!-- FEATURES SECTION -->
+<section class="features">
+
+    <div class="feature">
+        <div class="feature-icon"><i class="fa-solid fa-check"></i></div>
+        <h3>Verified Listings</h3>
+        <p>Trustworthy & safe</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <h3>Easy Search</h3>
+        <p>Find what you need</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon"><i class="fa-solid fa-house"></i></div>
+        <h3>Manage Your Properties</h3>
+        <p>Add, edit & delete</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon"><i class="fa-solid fa-shield"></i></div>
+        <h3>Student Friendly</h3>
+        <p>Built for you</p>
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2><i class="fa-solid fa-house"></i>StayFind</h2>
+            <p>
+                Finding student accommodation <br>
+                made simple.
+            </p>
+        </div>
+
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="#">Browse</a>
+            <a href="#properties">Properties</a>
+        </div>
+
+
+        <div class="footer-links">
+            <h3>Account</h3>
+
+            <a href="login.html">Login</a>
+            <a href="register.html">Sign Up</a>
+            <a href="add-property.html">Add Property</a>
+        </div>
+
+
+        <div class="footer-contact">
+            <h3>Stay Connected</h3>
+
+            <p>Have questions?</p>
+            <p>We're here to help you find your next home.</p>
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 StayFind. All rights reserved.</p>
+    </div>
+
+</footer>
+
+<script src="../JS/properties.js" type="module"></script>
+</body>
+</html>
+

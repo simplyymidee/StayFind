@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../IMAGES/logo.jpg">
+    <title>Property Details | StayFind</title>
+    <link rel="stylesheet" href="../CSSPAGES/propertydetails.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-house"></i>
+            StayFind
+        </a>
+
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Properties
+        </a>
+    </nav>
+
+    <main>
+        <div class="property-container">
+
+            <div class="property-header">
+                <div>
+                    <h1 id="detailsTitle">Property Title</h1>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="detailsLocation">Location</span>
+                    </p>
+                </div>
+
+                <h2 id="detailsPrice">₦0/year</h2>
+            </div>
+
+            <div class="property-info">
+                <div class="info-box">
+                    <i class="fa-solid fa-bed"></i>
+                    <div>
+                        <p>Rooms</p>
+                        <h3 id="detailsBedrooms">0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description-section">
+                <h2>About this property</h2>
+                <p id="detailsDescription">
+                    Property description will appear here.
+                </p>
+            </div>
+
+            <div class="landlord-section">
+                <div>
+                    <p>Listed by</p>
+                    <h3 id="landlordName">Landlord</h3>
+                </div>
+
+                <a href="#" id="contactLandlord" class="contact-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    Contact Landlord
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="../JS/property-details.js" type="module"></script>
+
+</body>
+
+</html>

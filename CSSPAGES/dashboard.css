@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fc;
+    color: #1e1e2f;
+}
+
+nav {
+    height: 75px;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    color: #5b4fe9;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo i {
+    margin-right: 5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #444;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #5b4fe9;
+}
+
+#logoutBtn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5b4fe9;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+#logoutBtn i {
+    margin-right: 5px;
+}
+
+#logoutBtn:hover {
+    background-color: #493ed1;
+}
+
+main {
+    padding: 55px 7%;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.welcome-section h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.welcome-section h1 span {
+    color: #5b4fe9;
+}
+
+.welcome-section p {
+    color: #777;
+    font-size: 14px;
+}
+
+.add-btn {
+    padding: 12px 20px;
+    background-color: #5b4fe9;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.add-btn i {
+    margin-right: 7px;
+}
+
+.add-btn:hover {
+    background-color: #493ed1;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+.dashboard-properties {
+    display: grid;
+    gap: 30px;
+    min-height: 300px;
+}
+
+.empty-properties {
+    background-color: white;
+    padding: 55px 20px;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.empty-properties i {
+    font-size: 45px;
+    color: #5b4fe9;
+    margin-bottom: 15px;
+}
+
+.empty-properties h3 {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.empty-properties p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.empty-properties a {
+    display: inline-block;
+    padding: 11px 18px;
+    background-color: #5b4fe9;
+    color: white;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+.property-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 9px 18px;
+    border-radius: 7px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #5b4fe9;
+    color: white;
+    border: 1px solid #5b4fe9;
+}
+
+.delete-btn {
+    background-color: white;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+.edit-btn:hover {
+    background-color: #493ed1;
+}
+
+.delete-btn:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+
+.view-btn {
+    padding: 9px 18px;
+    border-radius: 7px;
+    background-color: #f0efff;
+    color: #5b4fe9;
+    font-size: 13px;
+}
+
+.view-btn:hover {
+    background-color: #e3e0ff;
+}
+
+
+
+
+
+/*MEDIA QUERIES */
+@media (max-width: 630px) {
+     .nav-links a{
+        display: none;
+     }
+     .welcome-section h1 {
+        font-size: 24px;
+     }
+     .welcome-section p {
+        font-size: 12px;
+     }
+     .add-btn {
+        padding: 10px 14px;
+        font-size: 12px;
+     }
+}
+@media (max-width: 515px) {
+     .welcome-section h1 {
+        font-size: 22px;
+     }
+     .welcome-section p {
+        font-size: 10px;
+     }
+     .add-btn {
+        padding: 8px 10px;
+        font-size: 10px;
+     }
+}

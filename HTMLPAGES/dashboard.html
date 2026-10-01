@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../IMAGES/logo.jpg">
+    <title>Dashboard | StayFind</title>
+    <link rel="stylesheet" href="../CSSPAGES/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-house"></i>
+            StayFind
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#properties">Browse Properties</a>
+            <button id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="welcome-section">
+            <div>
+                <h1>Welcome, <span id="userName">User</span> 👋</h1>
+                <p id="userEmail">user@email.com</p>
+            </div>
+
+            <a href="add-property.html" class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+                Add New Property
+            </a>
+        </section>
+
+        <section class="my-properties">
+
+            <div class="section-heading">
+                <h2>My Properties</h2>
+                <p>Manage the properties you've listed.</p>
+            </div>
+
+            <div class="dashboard-properties" id="userProperties">
+
+                <div class="empty-properties">
+                    <i class="fa-solid fa-house-circle-xmark"></i>
+                    <h3>No properties yet</h3>
+                    <p>You haven't added any properties yet.</p>
+
+                    <a href="add-property.html">
+                        Add Your First Property
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="../JS/auth.js"></script>
+    <script type="module" src="../JS/properties.js"></script>
+</body>
+</html>

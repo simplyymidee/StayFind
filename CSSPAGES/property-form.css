@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fc;
+    color: #1e1e2f;
+}
+
+nav {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    color: #5b4fe9;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo i {
+    margin-right: 5px;
+}
+
+.back-dashboard {
+    color: #555;
+    font-size: 14px;
+}
+
+.back-dashboard i {
+    margin-right: 6px;
+}
+
+.back-dashboard:hover {
+    color: #5b4fe9;
+}
+
+main {
+    padding: 45px 20px;
+}
+
+.form-heading {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.form-heading h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.form-heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+.property-form {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #5b4fe9;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    width: 50%;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background-color: #5b4fe9;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #493ed1;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #5b4fe9;
+}

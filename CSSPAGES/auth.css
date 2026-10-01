@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* LOGIN & REGISTER */
+
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fc;
+    padding: 40px 20px;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 430px;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-logo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #5b4fe9;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    gap: 12px;
+}
+
+.auth-logo a {
+    color: #5b4fe9;
+}
+
+.auth-box h1 {
+    text-align: center;
+    color: #1e1e2f;
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.input-box i {
+    color: #999;
+    font-size: 14px;
+}
+
+.input-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 12px;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.eye-icon {
+    cursor: pointer;
+}
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+
+    background-color: #5b4fe9;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background-color: #493ed1;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.auth-switch a {
+    color: #5b4fe9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-home {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #777;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.back-home a {
+    color: #777;
+    text-decoration: none;
+}
+.back-home:hover {
+    color: #5b4fe9;
+}
+.back-home a:hover {
+    color: #5b4fe9;
+}

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fc;
+    color: #1e1e2f;
+}
+
+nav {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    color: #5b4fe9;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo i {
+    margin-right: 5px;
+}
+
+.back-link {
+    color: #555;
+    font-size: 14px;
+}
+
+.back-link i {
+    margin-right: 6px;
+}
+
+.back-link:hover {
+    color: #5b4fe9;
+}
+
+main {
+    padding: 60px 20px;
+}
+
+.property-container {
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.property-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.property-header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.location {
+    color: #777;
+    font-size: 14px;
+}
+
+.location i {
+    color: #5b4fe9;
+    margin-right: 5px;
+}
+
+.property-header h2 {
+    color: #5b4fe9;
+    font-size: 22px;
+}
+
+.property-info {
+    display: flex;
+    margin: 30px 0;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 22px;
+    background-color: #f8f9fc;
+    border-radius: 10px;
+}
+
+.info-box i {
+    color: #5b4fe9;
+    font-size: 22px;
+}
+
+.info-box p {
+    color: #777;
+    font-size: 12px;
+}
+
+.info-box h3 {
+    font-size: 16px;
+}
+
+.description-section {
+    margin-bottom: 35px;
+}
+
+.description-section h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.description-section p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.landlord-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+
+.landlord-section p {
+    color: #777;
+    font-size: 12px;
+}
+
+.landlord-section h3 {
+    font-size: 16px;
+}
+
+.contact-btn {
+    padding: 12px 18px;
+    background-color: #5b4fe9;
+    color: white;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+.contact-btn i {
+    margin-right: 6px;
+}
+
+.contact-btn:hover {
+    background-color: #493ed1;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 630px) {
+   .property-header h1{
+    font-size: 24px;
+   }
+   .property-header h2{
+    font-size: 15px;
+   }
+   .contact-btn{
+    font-size: 12px;
+    padding: 10px 14px;
+   }
+}
