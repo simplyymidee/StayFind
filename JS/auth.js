@@ -65,14 +65,12 @@ if (loginForm) {
 //dashboard
 
 const userName = document.getElementById("userName");
-const userEmail = document.getElementById("userEmail");
 const logoutBtn = document.getElementById("logoutBtn");
 
-if (userName && userEmail) {
+if (userName) {
     onAuthStateChanged(auth, function(user) {
         if (user) {
-            userName.innerHTML = user.displayName;
-            userEmail.innerHTML = user.email;
+            userName.textContent = user.displayName || "User";
         } else {
             window.location.href = "login.html";
         }

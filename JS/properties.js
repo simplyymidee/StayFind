@@ -215,7 +215,7 @@ if (allProperties) {
                 </span>
             </div>
 
-            <a href="property-details.html?id=${propertyDoc.id}" class="view-details-btn">
+            <a href="./HTMLPAGES/property-details.html?id=${propertyDoc.id}" class="view-details-btn">
                 View Details
             </a>
 
@@ -333,4 +333,47 @@ function displayProperties(properties) {
             imageIndex = 0;
         }
     });
+}
+
+// EXPLORE ALL PROPERTIES ON DASHBOARD
+const exploreProperties = document.getElementById("exploreProperties");
+
+if (exploreProperties) {
+    getDocs(collection(db, "properties"))
+        .then((querySnapshot) => {
+            exploreProperties.innerHTML = "";
+
+            if (querySnapshot.empty) {
+                exploreProperties.innerHTML = "<p>No properties available yet.</p>";
+                return;
+            }
+
+            querySnapshot.forEach((propertyDoc) => {
+                const property = propertyDoc.data();
+
+                exploreProperties.innerHTML += `
+                    <div class="dashboard-property-card">
+                        <div class="dashboard-property-info">
+                            <h3>${property.title}</h3>
+                            <p>${property.location}</p>
+
+                            <div class="property-details">
+                                <span>${property.bedrooms} Room(s)</span>
+                                <span>₦${property.price.toLocaleString()}/year</span>
+                            </div>
+
+                            <div class="property-actions">
+                                <a href="property-details.html?id=${propertyDoc.id}" class="view-btn">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        })
+        .catch((error) => {
+            console.log(error);
+            exploreProperties.innerHTML = "<p>Unable to load properties.</p>";
+        });
 }
